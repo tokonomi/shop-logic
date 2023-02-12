@@ -70,7 +70,8 @@ export const CardStore = ({ children }) => {
       setCard([...card, { id, productName, price, imageUrl, description, quantity: 1 }])
     }
   }
-  const decreaseInCard = (id, productName, price, imageUrl, description, quantity) => {
+
+  const decreaseInCard = (id, productName, price, imageUrl, description, quantity) => { // Bu funksiya yuxardakinin eksidir
     const existingId = card.find(item => item.id == id)
     if (existingId) {
       const getNonExisting = card.filter(item => item.id !== existingId.id)

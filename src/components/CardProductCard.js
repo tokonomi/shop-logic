@@ -16,11 +16,11 @@ const CardProductCard = ({ id, productName, price, imageUrl, quantity }) => {
       </div>
       <div className='card-product-card-buttons'>
         <button className='quantity-button' onClick={() => {
-          decreaseInCard(id, productName, price, imageUrl, quantity)
-          if(quantity == 1) deleteCard(id)
+          decreaseInCard(id, productName, price, imageUrl, quantity) // Quantity azaltmaq ucun, contextde teze funksiya yaradib, objecte aid olan propertini azaldiram 
+          if(quantity == 1) deleteCard(id) // Validation kimi item-in miqdari 1 < olsa, cart bosalmalidir
           }}> - </button>
         {quantity && <p> {quantity} </p> }
-        <button className='quantity-button' onClick={() => {addToCard(id, productName, price, imageUrl, quantity)}}> + </button>
+        <button className='quantity-button' onClick={() => {addToCard(id, productName, price, imageUrl, quantity)}}> + </button>  {/* Bu funksiya cart-a elave etmek contextde olan funksiyasindan istifade elemisem */}
         <button className='delete-button' onClick={() => deleteCard(id)}>
           {/* <DeleteIcon /> */}X
         </button>

@@ -1,8 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { filterByBrand } from '../redux/actions';
-import { filterByColor } from '../redux/actions';
-import { filterByLowerPrice, filterByMaxPrice } from '../redux/actions';
+import { filterByBrand, filterByColor, filterByLowerPrice, filterByMaxPrice } from '../redux/actions';
 
 const SearchParams = () => {
 
@@ -11,6 +9,7 @@ const SearchParams = () => {
   return (
     <div className='search-params-section'>
       <form className='brands-section'>
+        {/* Burda men inputlarla redux state brandin adini gonderirem */}
         <h4> Brands </h4>
         <div>
           <input type="checkbox" onChange={() => {dispatch(filterByBrand('Tecno'))}}/>
@@ -46,6 +45,7 @@ const SearchParams = () => {
       <div className='price-section'>
         <h4> Price </h4>
         <div>
+          {/* Burda men inputlarla redux state qiymetleri gonderirem */}
           <input type="number" placeholder='0' onChange={(e) => {dispatch(filterByLowerPrice(e.target.value))}}/>
           <span></span>
           <input type="number" placeholder='830' onChange={(e) => {dispatch(filterByMaxPrice(e.target.value))}}/>
