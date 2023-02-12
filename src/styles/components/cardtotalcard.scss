@@ -1,0 +1,58 @@
+.card-total-card {
+  width: 300px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: blanchedalmond;
+  padding: 25px;
+
+  button {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    background-color: $base-color;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      color: $base-color;
+      background-color: white;
+      transition: .6s;
+    }
+  }
+
+  .total-card-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .total-card-product-info {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .total-card-pay-base {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .total-card-pay {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        input {
+          accent-color: $base-color;
+        }
+
+        div {
+          display: flex;
+          gap: 15px;
+        }
+      }
+    }
+  }
+}

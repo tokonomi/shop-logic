@@ -1,0 +1,56 @@
+.card-product-card {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  .card-product-card-info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: bold;
+
+    span {
+      color: $base-color;
+    }
+
+    div {
+      height: 100%;
+      width: 35%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .card-product-card-buttons {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 15px;
+    padding-right: 25px;
+
+    .delete-button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      svg {
+        fill: black;
+
+        &:hover {
+          fill: $base-color;
+          transition: .6s;
+        }
+      }
+    }
+
+    .quantity-button {
+      cursor: pointer;
+      padding: 3px 6px;
+    }
+  }
+}

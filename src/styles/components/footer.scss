@@ -1,0 +1,52 @@
+.footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  padding: 60px 0;
+
+  div {
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+  
+  h2 {
+    color: white;
+    margin-bottom: 10px;
+
+    span {
+      color: $base-color;
+    }
+  }
+
+  p {
+    color: white;
+    line-height: 26px;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+
+    input {
+      width: 260px;
+      padding: 10px 20px;
+      border: none;
+    }
+
+    button {
+      padding: 10px 25px;
+      cursor: pointer;
+      border: none;
+      background-color: $base-color;
+      color: white;
+      font-weight: bold;
+
+      &:hover {
+        color: $base-color;
+        background-color: white;
+        transition: .6s;
+      }
+    }
+  }
+}

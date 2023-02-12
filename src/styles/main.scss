@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+$base-color: red;
+
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./components/searchparams.scss";
+@import "./components/shopproductcard.scss";
+@import "./components/cardtotalcard.scss";
+@import "./components/cardproductcard.scss";
+
+@import "./pages/shop.scss";
+@import "./pages/card.scss";
